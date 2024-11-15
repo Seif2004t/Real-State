@@ -1,0 +1,97 @@
+*{
+    font-family: Nunito;
+}
+/* .email-bg {
+    background-color: #334155;
+} */
+
+.space-y-custom li+li {
+    margin-top: 0.75rem;
+}
+
+.hover-text-white:hover {
+    color: #ffffff;
+}
+
+#arrow-up {
+    background-color: #212c3f;
+    bottom: 5px !important;
+    right: 15px !important;
+}
+.primary-bg {
+    background-color: #ff5a5f !important; 
+}
+
+.secondary-bg {
+    background-color: #24324a; 
+}
+
+.primary-text {
+    color: #ff5a5f; 
+}
+
+.mt-2 {
+    margin-top: 0.5rem !important; 
+}
+.mt-4 {
+    margin-top: 5% !important; 
+}
+
+.mb-4 {
+    margin-bottom: 1rem !important; 
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-8 {
+    margin-bottom: 2rem !important; 
+}
+
+.px-4 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.py-6 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+.p-6 {
+    padding: 1.5rem !important; 
+}
+
+.rounded-lg {
+    border-radius: 0.5rem !important; 
+}
+.status{
+    position: absolute;
+    top: 1rem;
+    left: 7rem;
+}
+.featured{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.paginationn a {
+    text-decoration: none;
+    color: #555;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.paginationn a:hover {
+    background-color: #f0f0f0;
+}
+
+.paginationn a.active {
+    background-color: #ff5a5f; 
+    color: white;
+    border: 1px solid #ff5a5f;
+}

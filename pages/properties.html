@@ -1,0 +1,311 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,500,600,700&amp;display=swap" rel="stylesheet"
+        data-optimized-fonts="true">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../assets/Css/nav-featured.css">
+    <link rel="stylesheet" href="../assets/Css/properties.css">
+    <link rel="stylesheet" href="../assets/Css/about.css">
+    <link rel="stylesheet" href="../assets/Css/general.css">
+    <title>Properties</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <div><a class="navbar-brand" href="../index.html"><img id="brand-logo"
+                        src="../assets/images/logo-4.png"></a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link text-black" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link active text-black" href="properties.html">Property</a>
+                    <a class="nav-link text-black" href="Services.html">Services</a>
+                    <a class="nav-link text-black" href="Blog.html">Blog</a>
+                    <a class="nav-link text-black" href="about.html">About Us</a>
+                    <a class="nav-link text-black" href="contact.html">Contact Us</a>
+                    <button type="button" class="btn btn-light" id="register-btn">+ Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Breadcrumb Section -->
+    <div class="container px-4 py-6 mt-4">
+        <p class="small text-muted">
+            <a href="#" class=" text-muted text-decoration-none">Home</a>
+            /
+            <a href="#" class="primary-text text-decoration-none">Properties</a>
+        </p>
+        <h1 class="h2 fw-semibold mt-2">Get all Properties</h1>
+    </div>
+    <!-- Main Section -->
+    <div class="d-flex justify-content-center align-items-start px-4 py-6">
+        <!-- Filters Sidebar -->
+        <div class="col-lg-3 me-4">
+            <div class="bg-white shadow rounded-lg p-6 mb-8">
+                <h3 class="h5 fw-semibold mb-4">Filter Properties</h3>
+
+                <select class="form-select mb-4" id="keywordFilter">
+                    <option disabled selected>Keyword</option>
+                    <option>Luxury</option>
+                    <option>Renovated</option>
+                </select>
+                <select class="form-select mb-4" id="locationFilter">
+                    <option disabled selected>Location</option>
+                    <option>New York</option>
+                    <option>Los Angeles</option>
+                    <option>Chicago</option>
+                </select>
+                <select class="form-select mb-4" id="statusFilter">
+                    <option disabled selected>Status</option>
+                    <option>For Sale</option>
+                    <option>For Rent</option>
+                </select>
+                <select class="form-select mb-4" id="propertyTypeFilter">
+                    <option disabled selected>Property Type</option>
+                    <option>Apartment</option>
+                    <option>Bungalow</option>
+                    <option>House</option>
+                </select>
+
+                <select class="form-select mb-4" id="priceRangeFilter">
+                    <option disabled selected>Price Range</option>
+                    <option>10k to 15k</option>
+                    <option>15k to 20k></option>
+                </select>
+                <select class="form-select mb-4" id="bathroomsFilter">
+                    <option disabled selected>Bathrooms</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3+</option>
+                </select>
+                <select class="form-select mb-4" id="bedroomsFilter">
+                    <option disabled selected>Bedrooms</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3+</option>
+                </select>
+                <select class="form-select mb-4" id="garagesFilter">
+                    <option disabled selected>Garages</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3+</option>
+                </select>
+
+                <div class="row g-2 mb-4">
+                    <input type="text" class="form-control" placeholder="Min Area">
+                    <input type="text" class="form-control" placeholder="Max Area">
+                </div>
+
+                <!-- Advanced Features -->
+                <div class="border-top pt-4">
+                    <details>
+                        <summary class="fw-semibold cursor-pointer mb-4">Advanced Features</summary>
+                        <div class="d-grid gap-3">
+                            <label class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <span class="form-check-label">Swimming Pool</span>
+                            </label>
+                            <label class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <span class="form-check-label">Air Conditioning</span>
+                            </label>
+                            <label class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <span class="form-check-label">Central Heating</span>
+                            </label>
+                        </div>
+                    </details>
+                </div>
+                <button class="btn btn-primary primary-bg text-white w-100">Clear Filters</button>
+            </div>
+            <!-- Featured Properties -->
+            <div class="bg-white shadow p-4 mb-6 rounded">
+                <h2 class="h5 fw-semibold mb-4">Featured Properties</h2>
+                <div id="featured-properties-slider" class="position-relative">
+                    <!-- Only show one card at a time -->
+                    <div class="position-relative rounded overflow-hidden">
+                        <img src="../assets/images/property.jpeg" alt="Featured Property" class="w-100 h-auto">
+                        <div class="featured secondary-bg text-white px-2 py-1 small fw-semibold rounded">
+                            Featured</div>
+                        <div class="status primary-bg text-white px-2 py-1 small fw-semibold rounded">
+                            For Sale</div>
+                        <div class="position-absolute bottom-0 start-0 text-white">
+                            <div class="fw-bold h6">Luxury Family Home</div>
+                            <div class="fw-semibold ">$13000/mo</div>
+                        </div>
+                    </div>
+                    <!-- Dots Navigation -->
+                    <div class="d-flex justify-content-center mt-4">
+                        <div class="rounded-circle bg-secondary mx-1" style="width: 10px; height: 10px;"></div>
+                        <div class="rounded-circle bg-secondary mx-1" style="width: 10px; height: 10px;"></div>
+                        <div class="rounded-circle bg-secondary mx-1" style="width: 10px; height: 10px;"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Categories Property -->
+            <div class="bg-white shadow rounded-lg p-6 mb-8">
+                <h3 class="h5 fw-semibold mb-4">Categories Property</h3>
+                <ul class="list-unstyled">
+                    <li>Apartment: 6 properties</li>
+                    <li>Condo: 12 properties</li>
+                    <li>Family House: 8 properties</li>
+                    <li>Modern Villa: 26 properties</li>
+                    <li>Town House: 89 properties</li>
+                </ul>
+            </div>
+            <!-- Recently Viewed -->
+            <div class="bg-white shadow rounded-lg p-6">
+                <h3 class="h5 fw-semibold mb-4">Recently Viewed</h3>
+                <div id="recentlyViewed" class="d-grid gap-3">
+                    <div class="d-flex align-items-center bg-white shadow rounded p-3">
+                        <img src="../assets/images/property.jpeg" alt="Luxury Family Home" class="rounded me-3"
+                            style="width: 64px; height: 64px;">
+                        <div>
+                            <div class="fw-semibold">Luxury Family Home</div>
+                            <div class="text-muted">Beds: 4, Baths: 2, Sqft: 5280</div>
+                            <div class="fw-bold primary-text">$19000/mo</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center bg-white shadow rounded p-3">
+                        <img src="../assets/images/property.jpeg" alt="Luxury Family Home" class="rounded me-3"
+                            style="width: 64px; height: 64px;">
+                        <div>
+                            <div class="fw-semibold">Luxury Family Home</div>
+                            <div class="text-muted">Beds: 4, Baths: 2, Sqft: 5280</div>
+                            <div class="fw-bold primary-text">$12000/mo</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center bg-white shadow rounded p-3">
+                        <img src="../assets/images/property.jpeg" alt="Luxury Family Home" class="rounded me-3"
+                            style="width: 64px; height: 64px;">
+                        <div>
+                            <div class="fw-semibold">Renovated Apartment</div>
+                            <div class="text-muted">Beds: 4, Baths: 2, Sqft: 5280</div>
+                            <div class="fw-bold primary-text">$11000/mo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Property Cards Grid -->
+        <div class="col-lg-6">
+            <div class="d-flex justify-content-between align-items-center mb-4 shadow rounded-lg p-2">
+                <p class="small text-muted m-0">10 Search results</p>
+                <div class="d-flex gap-3">
+                    <div>
+                        <select class="form-select">
+                            <option>Status: All Status</option>
+                            <option>For Sale</option>
+                            <option>For Rent</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="form-select">
+                            <option>Sort by: Featured All</option>
+                            <option>Price Low to High</option>
+                            <option>Price High to Low</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="propertyCards" class="row row-cols-1 row-cols-md-2 g-6">
+
+            </div>
+            <!-- Pagination -->
+            <div class="paginationn">
+                <a href="#" class="prevv">←</a>
+                <a href="#" class="pagee">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#" class="pagee">3</a>
+                <a href="#" class="nextt">→</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <section id="footer-sec1">
+            <div class="container w-75">
+                <div class="row justify-content-between" style="padding-top: 50px;">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <h6>About Site</h6>
+                        <div style="margin-top: 30px; margin-bottom: 30px;">
+                            <p>We're reimagining how you buy, sell and rent. It's now easier to get into a place you
+                                love. So let's do it together.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 mb-4">
+                        <h6>Quick Links</h6>
+                        <div style="display: flex; flex-direction: column; margin-top: 30px; margin-bottom: 30px;">
+                            <p><a href="">About Us</a></p>
+                            <p><a href="">Terms & Conditions</a></p>
+                            <p><a href="">User's Guide</a></p>
+                            <p><a href="">Support Center</a></p>
+                            <p><a href="">Press Info</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 mb-4">
+                        <h6>Contact Us</h6>
+                        <div style="display: flex; flex-direction: column; margin-top: 30px; margin-bottom: 30px;">
+                            <p>info@findhome.com</p>
+                            <p>Collins Street West, Victoria 8007, Australia.</p>
+                            <p>+1 246-345-0699</p>
+                            <p>+1 246-345-0695</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div>
+                            <h6>Follow Us</h6>
+                            <div style="display: flex; margin-top: 30px; margin-bottom: 30px; gap: 20px;">
+                                <a href=""><i class="fa-brands fa-instagram fa-lg" style="color: lightgray;"
+                                        aria-hidden="true"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter fa-lg" style="color: lightgray;"
+                                        aria-hidden="true"></i></a>
+                                <a href=""><i class="fa-brands fa-square-facebook fa-lg" style="color: lightgray;"
+                                        aria-hidden="true"></i></a>
+                                <a href=""><i class="fa-brands fa-pinterest fa-lg" style="color: lightgray;"
+                                        aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div>
+                            <h6>Subscribe</h6>
+                            <div style="display: flex; margin-top: 30px; margin-bottom: 30px; gap: 5px;">
+                                <input type="text" placeholder="Your email">
+                                <button>></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer-sec2">
+            <div class="w-75 m-auto d-flex justify-content-between align-items-center flex-wrap gap-3">
+                <div class="d-flex flex-wrap" style="gap: 20px;">
+                    <a href="">Home</a>
+                    <a href="">Listing</a>
+                    <a href="">Property</a>
+                    <a href="">About Us</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact</a>
+                </div>
+                <p style="margin: 0;">© 2024 by Company. All Rights Reserved.</p>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a721db6ac2.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/home-navbar.js"></script>
+    <script src="../assets/js/Properties.js"></script>
+    <script src="../assets/js/scrollToTop.js"></script>
+</body>
+
+</html>

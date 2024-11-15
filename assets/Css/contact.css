@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Navbar Styles */
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand img {
+    max-width: 175px;
+    margin-left: 20px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    gap: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: 600;
+    font-family: 'Nunito';
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #ff5a5f !important;
+}
+
+#register-btn {
+    background-color: #ff5a5f; 
+    color: white;
+    border-radius: 20px;
+    width: 125px;
+    font-weight: 600;
+}
+
+#register-btn:hover {
+    background-color: white;
+    color: #ff5a5f;
+}
+
+/* Navbar Collapse */
+.navbar-collapse {
+    flex-grow: unset !important;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 45vh;
+    display: flex;
+    background-image: url('../images/about-1.jpg');
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Nunito';
+}
+
+.hero-section h1{
+    color: white;
+    font-weight: bold;
+}
+
+.hero-section h6, .hero-section a{
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.sendEmail{
+    font-family: 'Nunito';
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.sendEmail h5, .contactPanel h5{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.sendEmail p, .contactPanel p{
+    font-size: 15px;
+    color: gray;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.sendEmail input, .sendEmail textarea{
+    font-size: 14px;
+}
+
+#send-btn{
+    background-color: #ff5a5f; 
+    color: white;
+    padding: 12px;
+    margin-top: 10px;
+    font-weight: 600;    
+}
+
+.contactPanel{
+    font-family: 'Nunito';
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.panelDetails{
+    margin-bottom: 25px;
+}
+
+.panelDetails h6{
+    font-weight: 600;
+}
+
+.panelDetails p{
+    margin-top: 5px;
+}
+
+.panelIcon{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panelIcon a{
+    color: black;
+}
+
+/* Call-to-action Section */
+.cta-section {
+    min-height: 150px;
+    background-color: #ff5a5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Nunito';
+}
+
+.cta-section h2{
+    color: white;
+    font-weight: bold;
+}
+
+.cta-section p{
+    color: white;
+    font-weight: 500;
+}
+
+#cta-btn {
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    padding: 15px;
+}
+
+#cta-btn:hover{
+    background-color: white;
+    color: #ff5a5f;
+}
+
+#scrollToTopBtn {
+	display: none;
+	position: fixed;
+    background-color: #24324a;
+	bottom: 40px;
+	right: 40px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	color: white;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 24px;
+	transition: opacity 0.3s ease;
+}
+
+#footer-sec1{
+    background-color: #24334A;
+    color: lightgray;
+    font-family: 'Nunito';
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-sec1 h6{
+    font-weight: bold;
+    color: white;
+}
+
+#footer-sec1 a{
+    color: lightgray;
+    text-decoration: none;
+}
+
+#footer-sec1 a:hover{
+    text-decoration: underline;
+}
+
+#footer-sec1 input{
+    width: 170px;
+    font-size: 14px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #364765;
+    color: grey;
+}
+
+#footer-sec1 button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #364765;
+    color: white;
+
+}
+
+#footer-sec2{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    background-color: #1D293F;
+    color: lightgray;
+}
+
+#footer-sec2 a{
+    color: lightgray;
+    text-decoration: none;
+}
+
+#footer-sec2 a:hover{
+    text-decoration: underline;
+}
+
+#footer-sec2 a, #footer-sec2 p{
+    font-size: 14px;
+}

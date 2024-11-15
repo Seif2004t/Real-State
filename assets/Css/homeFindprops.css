@@ -1,0 +1,174 @@
+#Find-Properties .city-cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+#Find-Properties .city-cards-content{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 70%);
+}
+#Find-Properties .city-cards .small-card{
+    width: 36%;
+    margin-bottom: 2%;
+}
+#Find-Properties .city-cards .big-card{
+    width: 62%;
+    margin-bottom: 2%;
+}
+/* Ensure the image fits the container */
+#Find-Properties .city-cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Find-Properties .small-card, .big-card {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Create the fading shadow effect */
+#Find-Properties .city-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Find-Properties .city-card-content h6, .city-card-content span {
+    margin: 0;
+}
+.backcolor{
+    background-color: rgb(230, 230, 230);
+}
+
+
+.title-container h2 {
+    font-size: 2rem; /* Already in rem */
+    font-weight: bold;
+    color: #333;
+}
+
+.title-container p {
+    font-size: 1rem; /* Already in rem */
+    color: #777;
+}
+
+.service-card {
+    border-radius: 0.5rem; /* Converted to rem (8px -> 0.5rem) */
+    transition: transform 0.3s ease;
+    height: 40vh; /* Retained height in viewport units */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    padding: 1.25rem; /* Converted padding to rem (20px -> 1.25rem) */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* Converted box-shadow values */
+    margin-bottom: 10%;
+}
+
+.service-card:hover {
+    transform: translateY(-0.625rem); /* Converted translateY to rem (10px -> 0.625rem) */
+}
+
+.icon {
+    width: 8rem; /* Converted width to rem (100px -> 6.25rem) */
+    height: 8rem; /* Converted height to rem (100px -> 6.25rem) */
+    border-radius: 50%;
+    background-color: #fceaea;
+    padding: 1.25rem; /* Converted padding to rem (20px -> 1.25rem) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.25rem; /* Converted margin-bottom to rem (20px -> 1.25rem) */
+    object-fit: contain;
+}
+
+h3 {
+    font-size: 1.25rem; /* Already in rem */
+    margin-top: 0.9375rem; /* Converted margin-top to rem (15px -> 0.9375rem) */
+    color: #333;
+}
+
+p {
+    font-size: 0.9rem; /* Already in rem */
+    color: #777;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* Converted box-shadow values to rem */
+}
+#why-choose-us .blog-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+    width: 32%;
+}
+
+#why-choose-us .blog-card:hover {
+    transform: translateY(-0.625rem);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+#why-choose-us .card-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 0.125rem solid #eee;
+}
+
+#why-choose-us .card-content {
+    padding: 1.25rem;
+}
+
+#why-choose-us .category {
+    color: #f56565; /* Example color for the category */
+    font-size: 0.875rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#why-choose-us .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+#why-choose-us .card-footer {
+    border-top: 0.125rem solid #eee;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#why-choose-us .author-info {
+    display: flex;
+    align-items: center;
+}
+
+#why-choose-us .author-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    object-fit: cover;
+}
+
+#why-choose-us .post-date {
+    color: #777;
+    font-size: 0.875rem;
+}

@@ -1,0 +1,29 @@
+
+/* Responsive for small screens (100% width for each card) */
+@media (max-width: 768px) {
+    /* Cards size adjustment */
+    .city-cards .small-card,
+    .city-cards .big-card {
+        width: 100%; /* Full width for each card */
+    }
+    #why-choose-us .blog-card{
+        width: 100%;
+    }
+    /* Adjust text size for small screens */
+    .city-card-content h5 {
+        font-size: 1rem; /* Smaller heading */
+    }
+
+    .city-card-content p {
+        font-size: 0.8rem; /* Smaller text */
+    }
+
+    /* Adjust title text size for small screens */
+    .title-container h2 {
+        font-size: 1.5rem; /* Smaller title */
+    }
+
+    .title-container p {
+        font-size: 0.9rem; /* Smaller subtitle */
+    }
+}
